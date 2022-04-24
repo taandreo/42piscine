@@ -3,17 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdias-ma <mdias-ma@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/09 15:50:43 by mdias-ma          #+#    #+#             */
-/*   Updated: 2022/04/10 16:10:32 by mdias-ma         ###   ########.fr       */
+/*   Created: 2022/04/12 15:17:00 by tairribe          #+#    #+#             */
+/*   Updated: 2022/04/17 02:25:44 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <string.h>
+#include <stdio.h>
+
+
+char *ft_strncpy(char *dest, char *src, unsigned int n);
 
 int	main(void)
 {
-	rush(5, 3);
-	return (0);
+	char	*src = "string";
+	char	dest[5];
+
+	char	*str;
+	str = ft_strncpy(dest, src, 5);
+	
+	printf("str: %s\n", str);
+	printf("dest: %s\n", dest);
 }
